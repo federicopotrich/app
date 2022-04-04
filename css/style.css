@@ -1,0 +1,162 @@
+div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    font-weight: bolder;
+    transition: .6s ease;
+}
+label:hover{
+    font-weight: bolder;
+    color: transparent;
+
+    
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+body h1{
+    margin-bottom: 15px;
+}
+body{
+    background-image: url('../images/normal.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.skins{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    width: 96vw;
+    overflow-x: scroll;
+    gap: 15px;
+}
+img{
+    width: 200px;
+}
+divPerSkin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    margin: 0, 250px;
+    padding: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.comune{
+    margin-top: 45px;
+    background-color: rgba(250, 235, 215, 0.192); 
+}
+button{
+    margin: 45px 0px;
+}
+
+.nothing{
+    text-align: center;
+}
+
+.chroma{
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(300px);
+    border: 5px solid whitesmoke;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    color: transparent;
+
+    
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.chroma:hover{
+    border: 1px solid rgba(245, 245, 245, 0);
+}
+i{
+    font-size: 2rem;
+}
+i[class="fa-solid fa-rotate-right"]{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+i[class="fa-solid fa-rotate-right"]:hover{
+    animation-name: refresh;
+    animation-duration: 1s;
+}
+@keyframes refresh {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(365deg);
+    }
+}
+
+form{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input[type=text]{
+    width: 250px;
+    text-indent: 10px;
+}
+input[type=checkbox]{
+    margin-left: 15px;
+}
+
+form div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    height: 7px;
+	width: 12px;
+	background-color: #f5f5f5a8;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+    transition: 1s ease;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgb(53, 53, 53);
+}
